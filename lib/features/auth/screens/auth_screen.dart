@@ -49,6 +49,7 @@ class _AuthScreenState extends State<AuthScreen> {
     authService.signUpUser(context: context, email: _emailController.text, password: _passwordController.text, name: _nameController.text);
   }
   
+  @override
   Widget build(BuildContext context) {
     
     return Scaffold(

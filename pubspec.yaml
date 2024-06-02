@@ -7,6 +7,7 @@ environment:
   sdk: '>=3.2.4 <4.0.0'
 
 dependencies:
+  badges: ^3.1.2
   file_picker_pro: ^1.6.0
   flutter:
     sdk: flutter

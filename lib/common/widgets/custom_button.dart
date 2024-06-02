@@ -13,7 +13,6 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      child: Text(text,style: TextStyle(color: GlobalVariables.backgroundColor),),
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
         backgroundColor: GlobalVariables.secondaryColor,
@@ -23,6 +22,7 @@ class CustomButton extends StatelessWidget {
         )
         
       ),
+      child: Text(text,style: const TextStyle(color: GlobalVariables.backgroundColor),),
     );
   }
 }

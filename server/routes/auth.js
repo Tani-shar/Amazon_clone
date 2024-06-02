@@ -41,7 +41,7 @@ try {
         if (password !==user.password) {
             return res.status(422).json({ error: "invalid password" });
         }
-        const token = jwt.sign({ userId: user._id }, 'secretkey');
+        const token = jwt.sign({ userId: user._id }, 'passwordKey');
         res.status(200).json({ token, ...user._doc});
         
         console.log("signed in successfully");
